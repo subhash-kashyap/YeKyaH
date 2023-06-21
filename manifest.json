@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Ye Kya H Extension",
+  "version": "1.0",
+  "description": "A simple browser extension to get explanations of selected text.",
+  "permissions": ["contextMenus", "activeTab", "https://api.openai.com/v1"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "saulsplaining.png",
+    "48": "saulsplaining.png",
+    "128": "saulsplaining.png"
+  }
+}
